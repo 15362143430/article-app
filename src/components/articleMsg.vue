@@ -16,7 +16,7 @@ export default {
     },
     methods: {
         onClickLeft(){
-            this.$router.push('/');
+            this.$router.go(-1);
         }
     },
     mounted () {
@@ -41,7 +41,8 @@ export default {
     /* border: 1px solid black; */
 }
 #article{
-    WORD-WRAP:break-word;TABLE-LAYOUT:fixed;word-break:break-all;
+   word-break:break-all;
+   overflow-x: hidden;
 
 }
 .van-nav-bar__title {
